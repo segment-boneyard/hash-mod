@@ -17,7 +17,7 @@ var mod = HashMod()
             .buckets(100);
 
 mod.get('some string');
-// 5
+// 60
 ```
 
 ## API
@@ -36,7 +36,7 @@ mod.get('some string');
 
 ### HashMod.get(str)
 
-  Takes a string `str` and returns a number
+  Takes the hash of `str`, mods the number value by  `buckets`, and returns the modded result.
 
 ## License 
 
