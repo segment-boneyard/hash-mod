@@ -10,11 +10,9 @@
 ## Example
 
 ```js
-var HashMod = require('hash-mod');
+var hashMod = require('hash-mod');
 
-var mod = HashMod()
-            .hash('md5')
-            .buckets(100);
+var mod = hashMod().hash('md5').buckets(100);
 
 mod.get('some string');
 // 60
@@ -22,23 +20,23 @@ mod.get('some string');
 
 ## API
 
-### HashMod
+### hashMod
 
   Create a new hasher. Defaults to algorithm `md5` and `100` buckets.
 
-### HashMod.hash(alg)
+### hashMod.hash(alg)
 
   Sets the hash algorithm `alg` on the hasher
 
-### HashMod.buckets(buckets)
+### hashMod.buckets(buckets)
 
   Sets the hash algorithm `alg` on the hasher
 
-### HashMod.get(str)
+### hashMod.get(str)
 
   Takes the hash of `str`, mods the number value by  `buckets`, and returns the modded result.
 
-## License 
+## License
 
 ```
 WWWWWW||WWWWWW
