@@ -5,7 +5,7 @@
 
 ## Install
 
-  npm install hash-mod
+    npm install hash-mod
 
 ## Example
 
