@@ -10,21 +10,17 @@
 ## Example
 
 ```js
-var hashMod = require('hash-mod')(100, 'md5');
+var mod = require('hash-mod')(100);
 
-hashMod.get('some string');
-// 60
+mod('string');
+// 13
 ```
 
 ## API
 
-### hashMod(buckets, alg)
+### hashMod(buckets)
 
-  Create a new hasher with hash algorithm `alg` and `buckets`. Defaults to algorithm `md5` and `100` buckets.
-
-### hashMod.get(str)
-
-  Takes the hash of `str`, mods the number value by  `buckets`, and returns the modded result.
+  Returns a mod-hashing function that first takes the integer hash, and then mods it by `buckets`. Defaults to `100` buckets.
 
 ## License
 
