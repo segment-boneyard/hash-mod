@@ -22,7 +22,7 @@ program.on('--help', function () {
  */
 
 program
-  .version('0.0.1')
+  .version('0.0.6')
   .option('-b, --bins [bins]', 'number of bins', parseInt, 100)
   .parse(process.argv);
 
