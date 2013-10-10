@@ -16,6 +16,14 @@ mod('string');
 // 13
 ```
 
+## CLI
+
+```shell
+$ hash-mod abvegegf --bins 100
+49
+```
+
+
 ## API
 
 ### hashMod(buckets)

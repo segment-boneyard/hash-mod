@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+
+var program = require('commander')
+  , mod = require('../');
+
+
+/**
+ * Describe our help message
+ */
+
+program.on('--help', function () {
+  console.log('  Usage:');
+  console.log('');
+  console.log('    $ hash-mod id --bins [bins]');
+  console.log('');
+});
+
+
+/**
+ * Set up option parsing
+ */
+
+program
+  .version('0.0.1')
+  .option('-b, --bins [bins]', 'number of bins', parseInt, 100)
+  .parse(process.argv);
+
+
+
+/**
+ * Run our hash-mod function
+ */
+
+if (program.args.length !== 1) return program.emit('--help');
+
+var id = program.args[0]
+  , bins = program.bins;
+
+console.log(mod(bins)(id));
