@@ -20,5 +20,6 @@
   },
   "bin": {
     "hash-mod": "bin/hash-mod"
-  }
+  },
+  "license": "MIT"
 }
